@@ -117,4 +117,4 @@ if __name__ == '__main__':
             for month, df in month_grp:
                 #monthly plotting
                 line_chart(df,None,"visit_count",node_name+"_"+month_dict[month],vis_path+"monthly_plotting/"+node_name+"/"+node_name+"_"+month_dict[month])              
-    print("++++++++++++++++++++++++++ process completed +++++++++++++++++++++++++++++++++")
+    print("++++++++++++++++++++++++++ process completed ++++++++++++++++++++++++++++++++")
