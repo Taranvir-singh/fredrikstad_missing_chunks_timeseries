@@ -80,7 +80,7 @@ def line_chart(df, y1, y2,title,path):
 
 if __name__ == '__main__':
 
-    store_data_dir = '/home/crossml/Documents/vo_fredrikstad/vo_fredrikstad_data'
+    store_data_dir = 'vo_fredrikstad_data'
     node_names=['all_visit','bb_01','bb_02','bb_03','bb_04','bb_05','bb_06','bb_07','bb_08','bb_09','bb_10','bb_11','bb_12','bb_13','bb_14','bb_15','bb_16','bb_17','bb_18']
     sample_rate='hourly'
     cl='classified'
