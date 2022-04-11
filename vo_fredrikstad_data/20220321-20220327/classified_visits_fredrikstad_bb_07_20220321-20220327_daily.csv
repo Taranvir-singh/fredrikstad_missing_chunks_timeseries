@@ -1,0 +1,8 @@
+visit_class_id,time,range,visit_count,visit_starts,visit_ends,total_presence_dwell,total_bucket_dwell,presence_dwell_starts,presence_dwell_ends,bucket_dwell_starts,bucket_dwell_ends,avg_dwell
+910,2022-03-20 23:00:00+00:00,day,611,611,611,1 days 04:06:10,1 days 04:06:10,1 days 04:06:10,1 days 04:06:10,1 days 04:06:10,1 days 04:06:10,0 days 00:02:45.581015
+910,2022-03-21 23:00:00+00:00,day,581,581,581,1 days 05:05:55,1 days 05:05:55,1 days 05:05:55,1 days 05:05:55,1 days 05:05:55,1 days 05:05:55,0 days 00:03:00.301205
+910,2022-03-22 23:00:00+00:00,day,563,563,562,1 days 02:21:25,1 days 02:21:00,1 days 02:21:25,1 days 02:20:55,1 days 02:21:00,1 days 02:20:55,0 days 00:02:48.534636
+910,2022-03-23 23:00:00+00:00,day,604,603,604,1 days 06:38:20,1 days 06:38:15,1 days 06:37:50,1 days 06:38:20,1 days 06:37:50,1 days 06:38:15,0 days 00:03:02.615894
+910,2022-03-24 23:00:00+00:00,day,591,591,591,1 days 06:40:55,1 days 06:40:55,1 days 06:40:55,1 days 06:40:55,1 days 06:40:55,1 days 06:40:55,0 days 00:03:06.895093
+910,2022-03-25 23:00:00+00:00,day,538,538,537,1 days 08:17:55,1 days 08:15:55,1 days 08:17:55,1 days 08:07:50,1 days 08:15:55,1 days 08:07:50,0 days 00:03:36.124535
+910,2022-03-26 23:00:00+00:00,day,303,302,303,0 days 15:17:05,0 days 15:09:00,0 days 15:07:00,0 days 15:17:05,0 days 15:07:00,0 days 15:09:00,0 days 00:03:01.600660

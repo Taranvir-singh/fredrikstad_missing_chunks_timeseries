@@ -1,0 +1,8 @@
+visit_class_id,time,range,visit_count,visit_starts,visit_ends,total_presence_dwell,total_bucket_dwell,presence_dwell_starts,presence_dwell_ends,bucket_dwell_starts,bucket_dwell_ends,avg_dwell
+1282,2022-03-20 23:00:00+00:00,day,66,66,66,0 days 05:51:50,0 days 05:51:50,0 days 05:51:50,0 days 05:51:50,0 days 05:51:50,0 days 05:51:50,0 days 00:05:19.848485
+1282,2022-03-21 23:00:00+00:00,day,62,62,61,0 days 01:46:45,0 days 01:45:40,0 days 01:46:45,0 days 01:26:50,0 days 01:45:40,0 days 01:26:50,0 days 00:01:43.306452
+1282,2022-03-22 23:00:00+00:00,day,90,89,90,0 days 04:07:25,0 days 03:48:35,0 days 03:47:30,0 days 04:07:25,0 days 03:47:30,0 days 03:48:35,0 days 00:02:44.944444
+1282,2022-03-23 23:00:00+00:00,day,53,53,53,0 days 04:23:00,0 days 04:23:00,0 days 04:23:00,0 days 04:23:00,0 days 04:23:00,0 days 04:23:00,0 days 00:04:57.735849
+1282,2022-03-24 23:00:00+00:00,day,73,73,73,0 days 07:00:10,0 days 07:00:10,0 days 07:00:10,0 days 07:00:10,0 days 07:00:10,0 days 07:00:10,0 days 00:05:45.342466
+1282,2022-03-25 23:00:00+00:00,day,61,61,60,0 days 05:58:45,0 days 04:12:25,0 days 05:58:45,0 days 02:29:00,0 days 04:12:25,0 days 02:29:00,0 days 00:05:52.868852
+1282,2022-03-26 23:00:00+00:00,day,63,62,63,0 days 10:15:30,0 days 08:32:05,0 days 06:45:45,0 days 10:15:30,0 days 06:45:45,0 days 08:32:05,0 days 00:09:46.190476

@@ -1,0 +1,4 @@
+id,installation_id,visit_class_id,time,range,visit_count,average_length,visit_diff,length_diff
+1979645,294,1282,2022-03-20 23:00:00+00:00,day,37,,0,0 days
+2014021,294,1282,2022-03-25 23:00:00+00:00,day,35,0 days,0,0 days
+1988580,294,1282,2022-03-21 23:00:00+00:00,day,11,0 days,0,0 days
