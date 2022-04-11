@@ -24,7 +24,7 @@ def decomp_plot(de,title,path):
     plt.savefig(path+".png", pad_inches=0.11, bbox_inches='tight', dpi=300)
     # plt.show()
     plt.close()
-
+       
 def line_chart(y1, y2, y3, y4, y5, title, path):
     # set plot font
     plt.rcParams["font.family"] = "DejaVu Sans"
@@ -32,7 +32,7 @@ def line_chart(y1, y2, y3, y4, y5, title, path):
     # Set plot border line width
     plt.rcParams['xtick.color'] = 'black'
     plt.rcParams['lines.markersize'] = 2
-    fig, ax1 = plt.subplots(figsize=(27,7))
+    fig, ax1 = plt.subplots(figsize=(20,5))
     width = 0.2
     n = 3 # larger n gives smoother curves
     b = [1.0 / n] * n # numerator coefficients
@@ -102,18 +102,18 @@ if __name__ == '__main__':
 
     #####################################################
     # modify the name of the node on which we wish to work
-    node_name ="bb_01"
+    node_name ="bb_02"
 
     # steps are  the hours to forecast
     steps=168
     
     #####################################################
-    result_path=r"results/"
-    make_directory(result_path+"","/hourly/forecasting")
-    make_directory(result_path+"","/hourly/forecasting/forecasted_sheets")
-    make_directory(result_path+"","/hourly/forecasting/STL_drift_visualization")
-    make_directory(result_path+"","/hourly/forecasting/STL_seasional_naive_visualization")
-    make_directory(result_path+"","/hourly/forecasting/Holt_winter_visualization")
+    result_path="results/"
+    result_dir=["/hourly/forecasting","/hourly/forecasting/forecasted_sheets","/hourly/forecasting/STL_drift_visualization",
+                "/hourly/forecasting/STL_seasional_naive_visualization","/hourly/forecasting/Holt_winter_visualization"]
+    for dir in result_dir:
+        make_directory(result_path+"",dir)
+        pass
     path=result_path+"/hourly/forecasting/"
     df=pd.read_csv(result_path+"/hourly/without_missing_data/result_sheets/"+node_name+"_results.csv")
     preprocess(df)

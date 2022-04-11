@@ -37,7 +37,7 @@ def line_chart(df, y1, y2,title,path):
     # Set plot border line width
     plt.rcParams['xtick.color'] = 'black'
     plt.rcParams['lines.markersize'] = 2
-    fig, ax1 = plt.subplots(figsize=(27,7))
+    fig, ax1 = plt.subplots(figsize=(20,5))
     width = 0.2
     n = 3 # larger n gives smoother curves
     b = [1.0 / n] * n # numerator coefficients
@@ -125,23 +125,19 @@ if __name__ == '__main__':
     #####################################################
     # modify the name of the node on which we wish to work
 
-    node_name='bb_01'
+    node_name='bb_02'
 
     #####################################################
     result_path=r"results"
     #reading data and respective columns
     data=pd.read_csv(result_path+"/hourly/concatinated_data/concatinated_"+node_name+".csv")
     vis_path=result_path+"/hourly/without_missing_data/"
-    make_directory(result_path+"","/hourly")
-    make_directory(result_path+"","/hourly/without_missing_data")
-    make_directory(result_path+"","/hourly/without_missing_data/result_sheets")
-    make_directory(result_path+"","/hourly/without_missing_data/STL_drift")
-    make_directory(result_path+"","/hourly/without_missing_data/STL_drift/overall_visualization")
-    make_directory(result_path+"","/hourly/without_missing_data/STL_drift/monthly_visualization")
-    make_directory(result_path+"","/hourly/without_missing_data/STL_drift/monthly_visualization/"+node_name)
-    make_directory(result_path+"","/hourly/without_missing_data/STL_seasional_naive")
-    make_directory(result_path+"","/hourly/without_missing_data/STL_seasional_naive/overall_visualization")
-    make_directory(result_path+"","/hourly/without_missing_data/STL_seasional_naive/monthly_visualization")
-    make_directory(result_path+"","/hourly/without_missing_data/STL_seasional_naive/monthly_visualization/"+node_name)
+    # making results directory
+    result_dir=["/hourly","/hourly/without_missing_data","/hourly/without_missing_data/result_sheets","/hourly/without_missing_data/STL_drift","/hourly/without_missing_data/STL_drift/overall_visualization",
+                "/hourly/without_missing_data/STL_drift/monthly_visualization","/hourly/without_missing_data/STL_drift/monthly_visualization/"+node_name,"/hourly/without_missing_data/STL_seasional_naive",
+                "/hourly/without_missing_data/STL_seasional_naive/overall_visualization","/hourly/without_missing_data/STL_seasional_naive/monthly_visualization","/hourly/without_missing_data/STL_seasional_naive/monthly_visualization/"+node_name]
+    for dir in result_dir:
+        make_directory(result_path+"",dir)
+        pass
     preprocess(data)
     

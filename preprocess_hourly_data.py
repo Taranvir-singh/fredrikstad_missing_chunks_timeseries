@@ -1,3 +1,4 @@
+#importing required libraries
 from datetime import date
 import numpy as np
 from glob import glob
@@ -79,22 +80,20 @@ def line_chart(df, y1, y2,title,path):
     plt.close()
 
 if __name__ == '__main__':
-
+    #select the directory where we have stored raw data of store 
     store_data_dir = 'vo_fredrikstad_data'
     node_names=['all_visit','bb_01','bb_02','bb_03','bb_04','bb_05','bb_06','bb_07','bb_08','bb_09','bb_10','bb_11','bb_12','bb_13','bb_14','bb_15','bb_16','bb_17','bb_18']
     sample_rate='hourly'
     cl='classified'
-    
     for node_name in tqdm(node_names):
         result_path=r"results"
         vis_path=result_path+"/hourly/with_missing_data/"
-        make_directory(result_path+"","/hourly")
-        make_directory(result_path+"","/hourly/concatinated_data")
-        make_directory(result_path+"","/hourly/with_missing_data")
-        make_directory(result_path+"","/hourly/with_missing_data/Missing_values_time_sheet")
-        make_directory(result_path+"","/hourly/with_missing_data/monthly_plotting")
-        make_directory(result_path+"","/hourly/with_missing_data/visualization_concatinated_data")
-        make_directory(result_path+"","/hourly/with_missing_data/monthly_plotting/"+node_name)
+        # making results directory
+        result_dir=["/hourly","/hourly/concatinated_data","/hourly/with_missing_data","/hourly/with_missing_data/Missing_values_time_sheet",
+                    "/hourly/with_missing_data/monthly_plotting","/hourly/with_missing_data/visualization_concatinated_data","/hourly/with_missing_data/monthly_plotting/"+node_name]
+        for dir in result_dir:
+            make_directory(result_path+"",dir)
+            pass
         #concatinate all previous data
         concatinated_data = []
         for file in glob(store_data_dir+'/*/*'):
